@@ -12,7 +12,7 @@
     crossorigin="anonymous"
   />
     
-    <script src="/js/"></script>
+    <script src="/js"></script>
     <title>pizza delivery </title>
 </head>
 <body>
@@ -51,125 +51,84 @@
             </div>
             </div>
             <br>
-            <div class="container">
-            <form action="" id="order">
-            <h2 style="text-align: center;color: lightgreen;"><strong> Order Now</strong></h2>
-            <div class="card" style="color:burlywood;">
-            <p>Choose the Pizza Flavour you want</p>
-            <select class="form-control form-control-sm" id="Flavour">
-            <br>
-            <option>select</option>
-            <option value="Chicken Flavour">Chicken flavour</option>
-            <option value="Hawaiian pizza">Hawaiian pizza</option>
-            <option value="Margherita Pizza">Margherita Pizza</option>
-            </select>
-            <p>Choose the size you want</p>
-            <select class="form-control form-control-sm" id="Size">
-            <br>
-            <option>select</option>
-            <option value="1200">Large </option>
-            <option value="750"> Medium</option>
-            <option value="300">Small</option>
-            </select>
-            <p>Choose what kind of crust</p> 
-            <select class="form-control form-control-sm" id="Crust">
-            <option>select</option>
-            <option value="50">Thin crust @ Ksh.50</option>
-            <option value="100">Thick crust @Ksh.100</option>
-            <option value="150">Stuffed crust @Ksh.150</option>
-            </select>
-            <p>Choose Pizza toppings</p>
-            <select class="form-control form-control-sm" id="Topping">
-            <option>select</option>
-            <option value="150">Potato @ Ksh.150</option>
-            <option value="100">Mushrooms @Ksh.100</option>
-            <option value="200">Black olives @Ksh.200</option>
-            </select>
-            
-            </div>
-            ​
-            </form>
-            ​
-            <form id="pricing">
-            <option value="one"></option>
-            <div class="form-group">
-            <label for="" >Number of Pizza </label>
-            <br>
-            <input type="number" class="form-control" id="number" placeholder="" required  min="1"/>
-            </div>
-            <button type="button" class="btn btn-success btn-lg" style="margin-left: 40%;" id="checkout">Order</button>
-            
-            </form>
-            </div>
-            ​
-            ​
-            ​
-            <br><br>
-            <div class="container" id="contain">
-            <div class="col-sm-7" id="orderPut">
-                   
-            <div class="orderCalculation">
-            <h2>Your Order is:</h2>
-            <div id="your-orders">
-            <table class="table table-sm  pizzaTable">
-            <thead>
-              <tr>
-                <th scope="col">Flavour</th>
-                <th scope="col">Size</th>
-                <th scope="col">Crust</th>
-                <th scope="col">Topping</th>
-                <th scope="col">Quantity</th>
-                <th scope="col">Total</th>
-              </tr>
-            </thead>
-            <tbody id="ordersTaken">
-              
-            </tbody>
-            </table>
-            <p class="deliveryCost hidden">
-            Delivery Cost: Ksh. <span id="delivery-cost"></span>
-            </p>
-            <p class="TotalAmount hidden">
-            Total Amount: Ksh. <span id="totalAmount"></span>
-            </p>
-            <br /><br />
-            <button class="btn btn-success" id="Checkout" onclick="myPizza()">Checkout</button>
-            <div class="checkout-info hidden">
-            <h3 id="check">Check form</h3>
-            <form action="" id="checkoutForm">
-            <div class="form-group">
-            <input type="text" id="name" class="form-control mb-3" placeholder="Name">
-            <label for="delivery"> Delivery Option</label>
-            <select class="form-control" id="OptionDelivery" required>
-            <option value="deliver"> Delivery?</option>
-            <option value="collect">PickUp</option>
-            </select>
-            </div>
-            <button type="submit" class="btn btn-success" id="final-option">Deliver</button>
-            </form>
-            </div>
-            <div class="deliveryLocation hidden">
-            <form id="locationForm">
-            <h3>Enterlocation</h3>
-            <div class="form-group">
-            <label>Estate</label>
-            <input type="text" class="form-control" id="estate" placeholder="Enter Your Estate Name"
-            required />
-            </div>
-            <div class="form-group">
-            <label for="exampleFormControlSelect1">House Number</label>
-            <input type="text" class="form-control" id="houseNumber" placeholder="Enter Your houseNumber"
-            required />
-            </div>
-            ​
-            <button type="submit" class="btn btn-success" id="submit" >Submit</button>
-            </form>
-            ​
-                   </div>
-                 </div>
+            <div id="mainform" class="row">
+                <div class="col-sm-6">
+                    <form id="choiceForm" class="col-sm-8">
+                        <label>Choose a pizza size</label>
+                        <select name="" id="pizzaSize" class="form-control">
+                                <option value="small">small --@300</option>
+                                <option value="medium">medium --@600</option>
+                                <option value="large">large --@900</option>
+                        </select></br>
+                        <label>Choose type of crust</label>
+                        <select name="" id="pizzaCrust" class="form-control">
+                            <option value="stuffed crust">Stuffed Crust</option>
+                            <option value="pizza bagels">Pizza Bagels</option>
+                            <option value="flat bread"> Flatbread</option>
+                            <option value="chicago deep dish">Chicago deep dish</option>
+                            <option value="Neapolitan crust">Neapolitan crust</option>
+                        </select></br>
+                        <label>Choose your pizza toppings</label></br>
+                        <select name="" id="pizzaTopping" class="form-control">
+                            <option value="fresh basil">Fresh basil --@50</option>
+                            <option value="black olives">Black olives --@50</option>
+                            <option value="pineapple">Pineapple --@50</option>
+                            <option value="sausage">Sausage and Shrimp</option>
+                        </select></br>
+                            
+                        <label>Enter the number:</label>
+                        <input id="pizzaNumber" type="number" min="1" placeholder="0"></br>
+                        <input id="submit" type="submit" class="btn btn-success m-3" value="checkout">
+                    </form>
                 </div>
-              </div>
-             </div>
+                
+            <!-- Order has been received -->
+                <div class="col-sm-6">
+                <div id="receivedOrder" class="">
+                    <p>Your order has been received.</br>You have ordered <span id="many"></span> pizza. Total bill is <span id="showPrice"></span></p>
+                    <input id="askDelivery" type="button" class="btn btn-success" value="Home Delivery">
+                    <input id="pick" type="button" class="btn btn-success" value="Pick">
+                    <input id="add" type="button" class="btn btn-success" value="Add">
+                </div>
+        
+            <!-- choose location -->
+                <section id="locate" class="">
+                    <div id="locationsection">
+                        <P class="pl-5">Ask for home deliveries</P>
+                        <p><span class="text-danger">*</span> Home delivery services are offered at Kes 150</p>
+                        <form id="formHome" action="" class="form-group">
+                            <input id="personName" class="form-control" type="text" placeholder="Fill your name" required>
+                            <input id="personContact" class="form-control mt-2" type="" placeholder="Fill your contact" required>
+                            <input id="personLocation" class="form-control mt-2" type="text" placeholder="Fill your location" required>
+                            <input id="deliveryBtn" class="btn btn-success mt-3" type="button" value="Place order">
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+        
+            <!-- Final price quatation -->
+            <section id="finalPrice" class="pt-5">
+                <div>
+                    <p>Thank you <span id="clientName"></span>. <span id="homeFull">Your order has been received and will be immediately dropped at <span id="home"></span></span>. <span id="homeless">Your order has been received but please provide your Location. Contact us at 0705315235.</span></p>
+                    <p class="text-center">The total bill for Pizza:<span id="totalPizza"></span></br> Delivery charges are kes 150</br> Total bill is <span id="totalPrice"></span></p>
+                    <p>Thank you for choosing us. We can't wait to serve you again next time.</p>
+                    <p>Cheers!</p>
+                    <input id="back" type="button" class="btn btn-success" value="Orders">
+                </div>
+            </section>
+        
+            <!-- Our Location -->
+            <div id="location">
+                <div>
+                    <p>Welcome to pick your pizza phisically at Pizza Peddlers.</br> Our contacts: +254705315235</p>
+                    <p>Thank you for choosing us. We can't wait to serve you again next time.</br> Cheers!</p>
+                    <input id="orders" type="button" class="btn btn-success" value="Orders">
+                </div>
+            </div>
+
+
+
              <div class="contact" style="text-align: center; background-color: burlywood; color: black;">
             ​<h1>Contact Us;</h1>
             ​<p> Email address :pizzaInn@gmail.com<br>
