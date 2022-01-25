@@ -8,72 +8,75 @@
     <link rel="shortcut icon" type="image/jpg" href="./Assets/pizza-ico.png">
     <link rel="stylesheet" type="text/css" href="./CSS/bootstrap.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+    <link rel="stylesheet" type="index.css" href=".index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Kalam:wght@300&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body class="container">
 
     <!--The header section-->
-    <header class="pt-4 text-light">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="row pl-4 pb-3">
-                    <div class="col-sm-3">
-                    
-                    </div>
-                    <div class="col-sm-4 mt-5" id="bigtextsmall">
-                        <p>Pizza </br> Delivery </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="row mt-4">
-                        <p class="col-sm-4">About us</p>
-                        <p class="col-sm-4">Make an order</p>
-                        <p class="col-sm-4">Contact us</p>
-                </div>
-            </div>
+    <title>pizza delivery </title>
+</head>
+<body>
+    <div class="home">
+        <div class="navbar">
+            PIZZA DELIVERY
+            <li id="nav" style="list-style: none;display: flex;flex-direction: row;float: right;">
+            <ul>home</ul>
+            <ul>about us</ul>
+            <ul>orders</ul>
+            <ul>contact us</ul>
+            </li>
         </div>
-    </header>
-
-    <!--About us section-->
-    <section>
-        <p id="aboutPizza" class="bigtext text-danger">Pizza Peddler</p>
-        <p class="text-center heavenlyslice">Get a slice of heaven</p>
-        <div class="row">
-            <div class="col-sm-6" id="about-text" >
-                <p>The very best and easy way to order your pizza is with us!</p> <br>
-                <p class="pl-5">Order tasty & </br>fresh Pizzas</br> <span class="text-danger emphasize">anytime! </span></br>Find orders below: <span class="text-danger font-weight-bold">&#x261F;</span></p>
+        <div class="container-fluid" id="home">
+            <h4 style="font-size: 50px;"> welcome to pizzaInn </h4>
+            <br>
+            <h5 style="font-size: 50px;"> enjoy the best pizza </h5>
+            <br>
             </div>
-            
-                
+            <div class="Table">
+            <div class="container">
+            <div class="row">
+              <div class="col-md">
+            <img src="piz.jpg" alt="" height="300" width="300"  style="margin-top:1rem;">
+            <h3> Small @ Ksh.300</h3>
+              </div>
+              <div class="col-sm">
+                <img src="pizzza.jpeg" alt="" height="300" width="300" style="margin-top:1rem;">
+                <h3> Medium @ Ksh.600</h3>
+              </div>
+              <div class="col-sm">
+                <img src="chcikenpizza.jpeg" alt="" height="300" width="300"style="margin-top:1rem;">
+                <h3> Large @ Ksh.900</h3>
+              </div>
             </div>
-        </div>
-    </section>
-    
+            </div>
+            </div>
+            <br>
+    </div>
     <!--make an order section-->
-    <section class="mt-3" id="orderpage">
+    <!-- <section class="mt-3" id="orderpage">
             <div class="card-group">
                 <div class="col-sm-4">
                     <p class="text-center">Large</p>
-                    <img src="pizza1.png" alt="large-pizza" class="img-fluid">
+                    <img src="./Assets/largepizza.jpg" alt="large-pizza" class="img-fluid">
                     <p class="text-center">Price: 900</p>
                 </div>
                 <div class="col-sm-4">
                     <p class="text-center">Medium</p>
-                    <img src="piz.png" alt="Medium-pizza" class="img-fluid">
+                    <img src="./Assets/mediumpizza.webp" alt="Medium-pizza" class="img-fluid">
                     <p class="text-center">Price: 600</p>
                 </div>
                 <div class="col-sm-4">
                     <p class="text-center">Small</p>
-                    <img src="pizza1.png" alt="small-pizza" class="img-fluid">
+                    <img src="./Assets/smallpizza.jpg" alt="small-pizza" class="img-fluid">
                     <p class="text-center">Price: 300</p>
                 </div>
             </div>
-    </section>
+    </section> -->
 
     <!-- Mainform -->
     <div id="mainform" class="row">
@@ -157,23 +160,16 @@
     </div>
 
     <!--contact section -->
-    <section id="contacts" class="mb-3  mt-3 pb-3 contact">
-        <div>
-            <p class="pt-3 pl-5 text-light">Please drop your feedback here..</p>
-            <form action="" id="feedback" class="ml-4 form-group">
-                <div class="row">
-                    <input type="text" class="form-control col-sm-5" placeholder="Name">
-                    <input type="text" class="form-control col-sm-5" placeholder="Email">
-                    <textarea placeholder="Enter Your feedback" class="form-control mt-3" rows=""></textarea>
-                </div>
-            </form>
+    <div class="contact" style="text-align: center; background-color: burlywood; color: black;">
+        ​<h1>Contact Us;</h1>
+        ​<p> Email address :pizzaInn@gmail.com<br>
+             Twitter @_pizzaInn</p>
+        <p style="font-style: italic;">we are committed to serving you</p>
         </div>
-            <div class="container align-items-center" id="icons">
-                <a href="x" class="href"><img src="./Assets/twitter.png" alt=""></a>
-                <a href="x" class="href"><img src="./Assets/you_tube.png" alt=""></a>
-                <a href="x" class="href"><img src="./Assets/facebook.png" alt=""></a>
-            </div>
-    </section>
+          <footer style="text-align: center ;"><strong>brysondevOps &copy 2022</strong> </footer>
+          <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="/js"></script>
+        </body>
+           
 </body>
-<script src="/js"></script>
-</html>
