@@ -77,11 +77,6 @@ $(document).ready(function(){
         $("#submit").hide();
 
 
-        // $("#add").click(function(){
-        //     var pizzaSize = $("#pizzaSize option:selected").val();
-        //     $("#showPrice").append().last(piza.size);
-        // })
-        // $("input#pizzaSize").val("");
     })
     $("#askDelivery").click(function(){
         $("#receivedOrder").hide();
