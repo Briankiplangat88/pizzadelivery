@@ -3,7 +3,7 @@
 #### AUTHOR :BRIAN KIPLANGAT
 1.Brian is an upcoming software dveloper who also studies at moringa school and wishes to add more skills in tech industry
 ## Description
-pizzaInn is a website where you can order your pizza anytime you want and it will be delivered at your doorstep,. Click the live link to tour the site.
+pizza delivery  is a website where you can order your pizza anytime you want and it will be delivered at your doorstep,. Click the live link to tour the site.
 ## Setup/Installation Requirements
 * install git in your terminal Used visual studio tool to develop the site and google chrome for running the program locally.
 
