@@ -5,8 +5,6 @@ $(document).ready(function(){
     $("#location").addClass("text-center");
     $("#toppings").addClass("text-center");
     $("#toppingsbuttons, #icons").addClass("text-center");
-    // $("locationsection").addClass("text-center");
-    // $("#idsects").addClass("text-center");
     $("#final, #finalPrice").addClass("text-center");
     $("#receivedOrder, #locate, #location, #finalPrice, #homeless").hide();
 })
